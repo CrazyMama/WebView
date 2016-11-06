@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+
+    <script type="text/javascript">
+
+    function showJsForAndroid(toast) {
+        Android.showToast(toast);
+    }
+    
+    function showAndroidForJs(content){
+
+    	document.getElementById("put_id").value=content;
+    	
+    }
+    
+
+    </script>
+
+</head>
+<body>
+<input type="button" value="JsForAndroid" onClick="showJsForAndroid('我是js,调用Android')"/>
+<input type="text" value="AndroidForJs" id="put_id"/>
+</body>
+</html>
